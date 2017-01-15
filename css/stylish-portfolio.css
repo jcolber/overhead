@@ -19,7 +19,8 @@ body {
 .text-vertical-center {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
+    padding-top:5%;
 }
 
 .text-vertical-center h1 {
@@ -28,6 +29,7 @@ body {
     font-size: 4.5em;
     font-weight: 700;
     color:white;
+    font-family: 'Cinzel', serif;
 }
 
 /* Custom Button Styles */
@@ -306,20 +308,22 @@ body{
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
 
+
 .snow > blockquote:nth-last-of-type(-n+2) ul {
 width: calc(100% - -100px);
 height: 610px;
-opacity: .50;
+display:table; 
+opacity: .80;
 position: absolute;
 top: -50px;
 left: -50px;
-overflow: hidden;
+overflow:hidden;
 margin: 0;
 padding: 0;
 font-size: 0;
 list-style: none;
 perspective: 310px;
-background-color: #000;
+
 animation: sway 20s ease infinite alternate;
 }
 
@@ -336,8 +340,9 @@ display: block;
 background-image: url(%%snow%%);
 background-image: url("https://cdn.shopify.com/s/files/1/1197/3550/t/12/assets/snow-flakes.png?15774796646925275990");
 height: 1200px;
-top: -150px;
-left: -50%;
+/*top: -150px;*/
+/*left: -50%;*/
+
 min-width: 2400px;
 width: 200vw;
 transform: translateX(-600px) translateY(-600px);
