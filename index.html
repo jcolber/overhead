@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Joshua Colbert Portfolio">
+    <meta name="description" content="Joshua Colbert's Portfolio of This and of That.">
     <meta name="author" content="Joshua Colbert">
 
-    <title>Josh Colbert - Web Developer, Photographer, Graphic Design</title>
+    <title>Josh Colbert - Web Development, Photography, Graphic Design</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -82,12 +82,12 @@
           </blockquote>
         </div> -->
         <div class="text-vertical-center">
-            
-            <h1>Josh Colbert</h1>
-            
-         <!--    <h3></h3>
+            <div itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name"><h1>Josh Colbert<h1></span> 
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
+            <h3>Web Development, Photography, Graphic Design</h3>
+           
+            <!-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
         </div>
 
     </header>
@@ -125,7 +125,7 @@
                                 <h4>
                                     <strong>Josh Colbert</strong>
                                 </h4>
-                                <p>Outdoorsman, Photographer, Web Dev, All Around Good Guy</p>
+                                <p>And I told them I invented Times New Roman</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
@@ -177,12 +177,35 @@
         </div>
         <!-- /.container -->
     </section>
-
+    <br>
+    <br>
+    <br>
     <!-- Callout -->
     <aside class="callout">
-        <div class="text-vertical-center">
-            <!-- <h1>Vertically Centered Text</h1> -->
-        </div>
+        <!-- <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div> -->
+          <section>
+    <h1>HTML</h1>
+    <div class="arrow">
+     <div class="arrow-status complete">
+       100%
+       <span class="arrow-pointer"></span>
+    </div>
+    </div>
+    <h1>CSS</h1>
+    <div class="arrow">
+     <div class="arrow-status pro">
+       70%<span class="arrow-pointer"></span>
+    </div>
+    </div>
+    <h1>PHP</h1>
+    <div class="arrow">
+     <div class="arrow-status noob">
+       20%
+    </div>
+    </div>
+  </section>
     </aside>
 
     <!-- Portfolio -->
@@ -195,16 +218,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="http://www.joshuacolbertphotography.com/landscapes">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
+                                <span itemprop="workExample" itemtype="http://schema.org/CreativeWork">
+                                    <a itemprop="url" href="http://www.joshuacolbertphotography.com/landscapes">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg" alt="Joshua Colbert Photography">
+                                    </a>
+                                </span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="http://saltcitygaragedoors.com">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
+                                <span itemprop="brand" itemtype="http://schema.org/LocalBusiness">
+                                    <a itemprop="url" href="http://saltcitygaragedoors.com">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    </a>
+                                </span>
                             </div>
                         </div>
                         <!-- <div class="col-md-6">
@@ -237,9 +264,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
+                    <!-- <h3>The buttons below are impossible to resist.</h3>
                     <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
                 </div>
             </div>
         </div>
@@ -260,13 +287,14 @@
         <section id="contact" class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Josh Colbert</strong>
+                    <h4><strong><span itemprop="name">Josh Colbert</span></strong>
                     </h4>
                     <p>
-                        <br>Salt Lake City, UT 84103</p>
+                        <br><span itemprop="homeLocation">Salt Lake City, UT 84103</span></p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i>  <a href=tel:+1 801-888-4359>(801)888-4359</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:jcolber@gmail.com">jcolber@gmail.com</a>
+                        <li><i class="fa fa-phone fa-fw"></i>  
+                        <a href=tel:+1 801-888-4359><span itemprop="telephone">(801)888-4359</span></a></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:jcolber@gmail.com"><span itemprop="email">jcolber@gmail.com</span></a>
                         </li>
                     </ul>
                     <br>
@@ -282,7 +310,7 @@
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Joshua Colbert</p>
+                    <p class="text-muted">Copyright &copy; <span itemprop="creator">Joshua Colbert</span> 2013<script>new Date().getFullYear()>2013&&document.write("-"+new Date().getFullYear());</script> </p>
                 </div>
             </div>
         </section>
@@ -369,6 +397,9 @@
     $('.map').on('click', onMapClickHandler);
     </script>
 
+
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
 </body>
 
 </html>
